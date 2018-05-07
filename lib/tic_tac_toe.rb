@@ -39,7 +39,7 @@ end
 
 # Build a method valid_move? that accepts a board and an index to check and returns true if the move is valid and false or nil if not. A valid move means that the submitted position is: Present or Not already filled
 def valid_move?(board, index)
-  if !((0..8) === index || position_taken?(board, index)
+  if !((0..8) === index) || position_taken?(board, index)
     #index.between?(0,8)
     false
   else
